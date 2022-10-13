@@ -38,6 +38,12 @@ true === true //========= true
     // higherOrderFunction(whyAndroid)
 
 //? - Callback Function
+    // function answerTheCall(reason, why){
+    //     console.log(reason);
+    //     console.log("Why? :(");
+    //     console.log(why);
+    // }
+
     // function isDead(whoTalks, reason, why, callBack){
     //     console.log("****phone ringing****");
     //     console.log(`****${whoTalks} answers the call****`);
@@ -45,16 +51,10 @@ true === true //========= true
     //     return callBack(reason, why);
     // }
 
-    // function answerTheCall(reason, why){
-    //     console.log(reason);
-    //     console.log("Why? :(");
-    //     console.log(why);
-    // }
-
     // const whoTalks = "Taylor"
     // const reason = "The old Taylor can't come through the phone right now";
     // const why = "Cause she's dead!"
-    // isDead(whoTalks, reason, why, answerTheCall)
+    // isDead(whoTalks, reason, why, answerTheCall) 
 
 
 
@@ -65,8 +65,8 @@ true === true //========= true
 //     const b = 'bye';
 //     if (arg) {
 //         const c = 'see ya!';
-//         console.log(a);
-//         console.log(b);
+//         console.log(a); // hi
+//         console.log(b); // bye
 //     }
 // }
 
@@ -100,7 +100,7 @@ true === true //========= true
 // console.log(newArray.length)
 
 //? Use the filter() method to filter out the element “3” and return: [1, 2, 4, 5]
-// const filter3 = newArray.filter(num => num != 3) 
+// const filter3 = newArray.filter(num => num !==3) 
 // console.log(filter3);
 
 //? Use the find() method to find and return the value of 5.
@@ -123,7 +123,7 @@ true === true //========= true
 // console.log(Array.isArray(someArray1))
 
 //? Use the join() method to return back: “1, 2, 3, 4, 5”
-// console.log(someArray1.join(","))
+// console.log(someArray1.join(", "))
 
 //? Use the map() method to return back a new array: [2, 4, 6, 8, 10]
 // const mapDouble = someArray1.map(num => {
@@ -156,8 +156,6 @@ true === true //========= true
 // const total = someArray1.reduce((previousValue, currentValue) => 
 // previousValue + currentValue, 0)
 // console.log(total)
-
-
 
 
 
@@ -250,10 +248,8 @@ true === true //========= true
 // just like how it is with synchronous programming.
 
 //! Problem #12: Explain what call back hell is. 
-// Callback hell happens when you keep nesting if-else statements (or any other). It's called callback because at 
-// some point in the code you are going to callback function and passing results/parameters in your code. I 
-// believe it's also called hell because as from what I experienced before, I had wrote codes wherein 
-// it became like a pyramid, and it became messy to maintain and looking for codes will be hard.
+// Callback hell happens when you keep nesting if-else statements (or any other). It's called callback because at some point in the code you are going to callback function and passing results/parameters in your code. I believe it's also called hell because as from what I experienced before, I had wrote codes wherein it became like a pyramid, and it became messy to maintain and looking for codes will be hard.
+
 //! Problem #13: Explain what is a promise and describe the possible states of promises. 
 // Promises is one way to get better in asynchronous operations. In promises, the object can be pending, 
 // fulfilled, or rejected. It's like try-catch function, you construct a function if the task is successful 
